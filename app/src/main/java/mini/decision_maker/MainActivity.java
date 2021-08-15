@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText option0;
+    private EditText option0; // FIXME make array of EditText?
     private EditText option1;
     private EditText option2;
     private EditText option3;
@@ -88,8 +88,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(resultIntent);
     }
 
-    public void clickDebug(View v) {
-        StringsApp.printOptions();
+    public void clickClear(View v) {
+        option0.getText().clear();
+        option1.getText().clear();
+        option2.getText().clear();
+        option3.getText().clear();
+        option4.getText().clear();
     }
 
     private void setButton(Button b, boolean enable, int color) {
