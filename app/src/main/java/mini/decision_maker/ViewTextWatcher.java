@@ -2,13 +2,12 @@ package mini.decision_maker;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
 
 public class ViewTextWatcher implements TextWatcher {
-    private int optionNum;
+    private final int choiceIndex;
 
-    public ViewTextWatcher(int optionNum) {
-        this.optionNum = optionNum;
+    public ViewTextWatcher(int choiceIndex) {
+        this.choiceIndex = choiceIndex;
     }
 
     @Override
@@ -20,6 +19,6 @@ public class ViewTextWatcher implements TextWatcher {
     @Override
     public void afterTextChanged(Editable e) {
         String s = e.toString();
-        StringsApp.setOption(optionNum,s);
+        StringsApp.setOption(choiceIndex,s);
     }
 }

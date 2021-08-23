@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Decision Maker</string>
+    <string name="app_name">Quick Pick</string>
+    <string name="choice_1">Choice 1</string>
+    <string name="choice_2">Choice 2</string>
+    <string name="choice_3">Choice 3</string>
+    <string name="choice_4">Choice 4</string>
+    <string name="choice_5">Choice 5</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="clear">Clear</string>
+    <string name="decide_for_me">Decide for me!</string>
+    <string name="quick_decide">Quick Decide Yes / No</string>
+    <string name="go_back">Go Back</string>
+    <string name="decide_again">Decide Again</string>
+    <string name="picked_choice">The choice picked was:</string>
+    <string name="no_specified_choices">Wait, you didn\'t specify any choices!</string>
 </resources>

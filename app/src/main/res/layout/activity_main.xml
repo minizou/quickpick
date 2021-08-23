@@ -7,22 +7,24 @@
     android:background="@color/background_grey"
     tools:context=".MainActivity">
 
+    <!-- choices -->
     <EditText
         android:id="@+id/option_0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
-        android:hint="Choice 1"
 
+        android:backgroundTint="@android:color/white"
+        android:ems="11"
+        android:hint="@string/choice_1"
         android:inputType="textPersonName"
         android:singleLine="false"
         android:textSize="16sp"
+        android:importantForAutofill="no"
+
         app:layout_constraintBottom_toTopOf="@+id/option_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,17 +35,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
+        android:layout_marginBottom="7dp"
 
-        android:hint="Choice 2"
+        android:backgroundTint="@android:color/white"
+        android:ems="11"
+        android:hint="@string/choice_2"
         android:inputType="textPersonName"
         android:singleLine="false"
         android:textSize="16sp"
+        android:importantForAutofill="no"
+
         app:layout_constraintBottom_toTopOf="@+id/option_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,18 +58,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
-        android:enabled="false"
-        android:hint="Choice 3"
-        android:inputType="textPersonName"
 
+        android:backgroundTint="@android:color/white"
+        android:ems="11"
+        android:enabled="false"
+        android:hint="@string/choice_3"
+        android:inputType="textPersonName"
         android:singleLine="false"
         android:textSize="16sp"
         android:visibility="invisible"
+        android:importantForAutofill="no"
+
         app:layout_constraintBottom_toTopOf="@+id/option_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,18 +82,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
-        android:enabled="false"
-        android:hint="Choice 4"
-        android:inputType="textPersonName"
 
+        android:backgroundTint="@android:color/white"
+        android:ems="11"
+        android:enabled="false"
+        android:hint="@string/choice_4"
+        android:inputType="textPersonName"
         android:singleLine="false"
         android:textSize="16sp"
         android:visibility="invisible"
+        android:importantForAutofill="no"
+
         app:layout_constraintBottom_toTopOf="@+id/option_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,34 +106,36 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
-        android:enabled="false"
-        android:hint="Choice 5"
-        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"
 
+        android:backgroundTint="@android:color/white"
+        android:ems="11"
+        android:enabled="false"
+        android:hint="@string/choice_5"
+        android:inputType="textPersonName"
         android:singleLine="false"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        android:importantForAutofill="no"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_subtract"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option_3" />
 
+    <!-- button UI -->
     <Button
         android:id="@+id/btn_add"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
 
         android:backgroundTint="@color/green"
         android:gravity="center"
-        android:hint="+"
+        android:hint="@string/plus"
         android:onClick="clickAdd"
         android:textColor="@color/light_grey"
         android:textSize="20sp"
@@ -141,34 +148,35 @@
         android:id="@+id/btn_subtract"
         android:layout_width="0dp"
         android:layout_height="70dp"
-
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
+
         android:backgroundTint="@color/background_lighter_grey"
         android:enabled="false"
         android:gravity="center"
-        android:hint="-"
+        android:hint="@string/minus"
         android:onClick="clickSubtract"
         android:textSize="20sp"
+
         app:layout_constraintBottom_toTopOf="@+id/btn_decide"
         app:layout_constraintEnd_toStartOf="@+id/btn_add"
-        app:layout_constraintStart_toEndOf="@+id/btn_subtract2" />
+        app:layout_constraintStart_toEndOf="@+id/btn_clear" />
 
     <Button
-        android:id="@+id/btn_subtract2"
+        android:id="@+id/btn_clear"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
 
         android:backgroundTint="@color/orange"
         android:gravity="center"
         android:onClick="clickClear"
-        android:text="Clear"
-        android:textSize="14sp"
+        android:text="@string/clear"
         android:textColor="@color/white"
+        android:textSize="11sp"
 
         app:layout_constraintBottom_toTopOf="@+id/btn_decide"
         app:layout_constraintEnd_toStartOf="@+id/btn_subtract"
@@ -177,18 +185,34 @@
     <Button
         android:id="@+id/btn_decide"
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="2dp"
 
-        android:layout_marginBottom="32dp"
         android:backgroundTint="@color/teal"
         android:onClick="clickDecide"
-
-        android:text="Decide for me!"
+        android:text="@string/decide_for_me"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_quick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_quick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+
+        android:fontFeatureSettings="smcp"
+        android:onClick="clickQuick"
+        android:text="@string/quick_decide"
+        android:textColor="@color/light_grey"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

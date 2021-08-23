@@ -7,42 +7,44 @@
     android:background="@color/background_grey"
     tools:context=".ResultActivity">
 
+    <!-- button UI -->
     <Button
         android:id="@+id/btn_decide_result"
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="44dp"
 
         android:backgroundTint="@color/teal"
         android:onClick="clickDecide"
-        android:text="Decide Again"
-
+        android:text="@string/decide_again"
         android:textSize="16sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_back"
+        android:id="@+id/btn_back_result"
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
 
-        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/orange"
         android:onClick="clickBack"
-        android:text="Go Back"
-
+        android:text="@string/go_back"
         android:textSize="16sp"
+
         app:layout_constraintBottom_toTopOf="@+id/btn_decide_result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_choice" />
+
+    <!-- choice result -->
 
     <TextView
         android:id="@+id/txt_final_info"
@@ -53,10 +55,10 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-
-        android:text="The choice picked was:"
+        android:text="@string/picked_choice"
         android:textColor="@color/light_yellow"
         android:textSize="20sp"
+
         app:layout_constraintBottom_toTopOf="@+id/txt_choice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,18 +68,17 @@
         android:id="@+id/txt_choice"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
+
         android:gravity="center"
-        android:text="Wait, you didn't specify any choices!"
+        android:text="@string/no_specified_choices"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_back"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_back_result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_final_info" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

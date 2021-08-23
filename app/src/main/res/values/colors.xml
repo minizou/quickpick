@@ -4,7 +4,6 @@
     <color name="orange">#FFA000</color>
     <color name="teal">#00796B</color>
     <color name="green">#388E3C</color>
-
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="light_yellow">#FFE288</color>
@@ -12,4 +11,7 @@
     <color name="background_dark_grey">#252525</color>
     <color name="background_grey">#333333</color>
     <color name="background_lighter_grey">#4C4C4C</color>
+
+    <color name="light_green">#81C784</color>
+    <color name="light_red">#E57373</color>
 </resources>

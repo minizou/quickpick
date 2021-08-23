@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mini.decision_maker">
-
     <application
         android:name=".StringsApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/quickpick_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/quickpick_icon_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DecisionMaker">
-        <activity
-            android:name=".ResultActivity"
+        android:theme="@style/Theme.DecisionMaker"
+        android:fullBackupContent="True">
+
+        <activity android:name=".QuickActivity"
             android:exported="true" />
 
-        <activity
-            android:name=".MainActivity"
+        <activity android:name=".ResultActivity"
+            android:exported="true" />
+
+        <activity android:name=".SplashScreen"
+            android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
 </manifest>
