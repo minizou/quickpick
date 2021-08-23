@@ -6,7 +6,8 @@ QuickPick is an ad-free app that randomly picks a decision for you. Enter up to 
 - Randomly selects a choice from a list of up to 5 choices
 - The most recently inputted choices are automatically saved
 - Saved choices can be cleared at any time
-- Quick Decide Preset: generates a quick random Yes or No
+- Presets
+	- Quick Decide Preset: generates a quick random Yes or No
 
 # Future Improvements
 - Greatly increase the number of choices from 5 to 25
