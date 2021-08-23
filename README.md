@@ -17,4 +17,4 @@ QuickPick is an ad-free app that randomly picks a decision for you. Enter up to 
 	- Number generation
 
 # Preview
-![Image of App UI](https://github.com/minizou/quickpick/blob/main/images/quickpick_preview.png?raw=true)
+![Image of App UI](https://github.com/minizou/quickpick/blob/main/image/quickpick_preview.png?raw=true)
