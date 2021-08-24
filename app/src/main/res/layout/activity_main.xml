@@ -176,7 +176,7 @@
         android:onClick="clickClear"
         android:text="@string/clear"
         android:textColor="@color/white"
-        android:textSize="11sp"
+        android:textSize="10sp"
 
         app:layout_constraintBottom_toTopOf="@+id/btn_decide"
         app:layout_constraintEnd_toStartOf="@+id/btn_subtract"
