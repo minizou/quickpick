@@ -1,3 +1,4 @@
+![Image of Feature](https://github.com/minizou/quickpick/blob/main/image/quickpick_feature.png?raw=true)
 # QuickPick: The Random Decision Maker
 
 QuickPick is an ad-free app that randomly picks a decision for you. Enter up to 5 choices, and QuickPick will randomly decide on 1 choice for you.
